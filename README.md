@@ -50,13 +50,13 @@ cuckoo –d
 
 •	The first run should build the configuration files and save them in some location. The location is shown in the output of the run (should contain “.cuckoo” library). It is strongly advised to remember that location for the following steps and for future usages
 
-•	Edit ".cuckoo/conf/cuckoo.conf"
+•	Edit "~/.cuckoo/conf/cuckoo.conf"
 ```
 machinery = aws
 [resultserver] ip = <the private IP of this machine>
 ```
 
-•	Edit ".cuckoo/conf/aws.conf" according to the instructions in the file
+•	Edit "~/.cuckoo/conf/aws.conf" according to the instructions in the file
 
 •	Run 
 ```
