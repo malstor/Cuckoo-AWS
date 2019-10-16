@@ -29,7 +29,7 @@ virtualenv venv
 Install some dependencies:
 ```
 sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev zlib1g-dev
-
+```
 •	Install boto3 library
 ```
 pip install boto3
