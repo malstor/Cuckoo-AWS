@@ -28,7 +28,7 @@ sudo apt install virtualenv vim python
 ```
 •	Setup and activate virtual environment 
 ```
-virtualenv venv
+sudo virtualenv venv
 . venv/bin/activate
 ```
 Install some dependencies:
