@@ -11,7 +11,12 @@ https://research.checkpoint.com/cuckoo-system-on-aws/
 ## Installation instructions - Nest Setup
 
 
-•	Launch a Linux machine (possible via AWS marketplace)
+•	Launch a Ubuntu Linux machine (possible via AWS marketplace)
+
+Update the package indexes and packages
+```
+sudo apt update && sudo apt upgrade
+```
 
 •	Clone the repository
 ```
