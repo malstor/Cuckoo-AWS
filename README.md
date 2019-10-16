@@ -19,14 +19,16 @@ git clone https://github.com/CheckPointSW/Cuckoo-AWS
 ```
 •	Install pre-requisite packages
 ```
-sudo apt install virtualenv vim python-dev libffi-dev libssl-dev build-essential libjpeg8-dev zlib1g-dev
-
+sudo apt install virtualenv vim python
 ```
 •	Setup and activate virtual environment 
 ```
 virtualenv venv
 . venv/bin/activate
 ```
+Install some dependencies:
+```
+sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev zlib1g-dev
 
 •	Install boto3 library
 ```
