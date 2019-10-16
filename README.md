@@ -90,7 +90,8 @@ From a command prompt execute:
 ```
 GPEDIT.msc
 ```
-Locate the following setting ad set it to disbaled:
+Locate the following setting and set it to disbaled:
+```
     Computer Configuration
         Policies
             Administrative Templates: Policy …
@@ -99,15 +100,16 @@ Locate the following setting ad set it to disbaled:
                         Windows Firewall
                             Domain Profile
                                Double-click the “Windows Firewall: Protect all network connections” object and change the setting to "Disabled"
-
+```
 Next, locate the following and set it to enabled as follows:
+```
      Computer Configuration
           Administrative Templates
                Windows Components
                     Windows Updates
                          Click on Edit policy setting to open the Configure Automatic Updates dialog.
                               On the Configure Automatic Updates dialog, select Enabled in the left pane, in the Options section click on the Configure Automatic Updating Combo Box and in the dropdown list select "Notify for download and notify for install."
-  
+```  
 •	Install Cuckoo agent (https://cuckoo.sh/docs/installation/guest/agent.html)
 From the Cuckoo directoy located in "~/.cuckoo/agent/" copy the agent.py filw to the windows macine and rename it to <randomstring>.pyw (pyw executes without displaing the console durring execution)
  
@@ -120,15 +122,19 @@ From the Cuckoo directoy located in "~/.cuckoo/agent/" copy the agent.py filw to
 
 To export this vm to AWS:
 1. In virtualbox, right click on the VM, and choose "Export this VM to OVI"
+```
 Format: Open Virtuialization Format 2.0
 Strip all MAC addresses
 Check, "Write Manifest File"
 Click "Next" and "Export"
-
+```
 2. Upload the Image to AWS
+```
 Create and IAM user "cuckoo"
 Add S3 Admin Permissions for this user (can be done through AWS Management Console)
+```
 Wait on the screen that has the API keys and run from CMD prompt:
+
 ```
 aws configure
 ```
