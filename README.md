@@ -17,7 +17,10 @@ https://research.checkpoint.com/cuckoo-system-on-aws/
 ```
 git clone https://github.com/CheckPointSW/Cuckoo-AWS
 ```
-
+•	Install pre-requisite packages
+```
+sudo apt install virtualenv vim python
+```
 •	Setup and activate virtual environment 
 ```
 virtualenv venv
