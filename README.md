@@ -40,6 +40,7 @@ sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev z
 ```
 •	Obtain the matching monitoring binaries from the community repository (execute from the Cuckoo-AWS directory)
 ```
+cd CuckooAWS
 python stuff/monitor.py
 ```
 
