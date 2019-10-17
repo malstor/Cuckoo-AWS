@@ -31,7 +31,7 @@ pip install boto3
 ```
 •	Setup and activate virtual environment 
 ```
-sudo virtualenv venv
+virtualenv venv
 . venv/bin/activate
 ```
 Install some dependencies:
