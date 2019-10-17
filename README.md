@@ -34,7 +34,7 @@ sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev z
 ```
 pip install boto3
 ```
-```
+
 •	Setup and activate virtual environment 
 ```
 sudo virtualenv venv
