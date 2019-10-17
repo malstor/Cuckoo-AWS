@@ -26,11 +26,6 @@ git clone https://github.com/CheckPointSW/Cuckoo-AWS
 ```
 sudo apt install virtualenv vim python
 ```
-•	Setup and activate virtual environment 
-```
-sudo virtualenv venv
-. venv/bin/activate
-```
 Install some dependencies:
 ```
 sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev zlib1g-dev
@@ -38,6 +33,12 @@ sudo apt install python-dev libffi-dev libssl-dev build-essential libjpeg8-dev z
 •	Install boto3 library
 ```
 pip install boto3
+```
+```
+•	Setup and activate virtual environment 
+```
+sudo virtualenv venv
+. venv/bin/activate
 ```
 
 •	Obtain the matching monitoring binaries from the community repository (execute from the Cuckoo-AWS directory)
