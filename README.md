@@ -23,8 +23,14 @@ git clone https://github.com/CheckPointSW/Cuckoo-AWS
 ```
 •	Install pre-requisite packages
 ```
-sudo apt install virtualenv vim python python-pip
+sudo apt install virtualenv vim python python-pip tcpdump apparmor-utils swig
 ```
+Enable Cuckoo access to tcpdump:
+```
+sudo aa-disable /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+```
+
 •	Install boto3 library
 ```
 pip install boto3
